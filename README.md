@@ -9,21 +9,35 @@ This code is in the public domain - use it however you like
  
 Take caution when sending out mass mailings using this script. 
 
-If in doubt, ask the administrator of your email server.
-
 Do not use this script for spamming.
 
 Features
 --------
 
-* combines a template file and a CSV list
-* Double protection against mistakes
+* fills an email template with data from a CSV list
+* short, clean and customizable
+* requires some customization for a specific task
+* double protection against mistakes
 * TLS and authentication for SMTP
 * UTF-8 - should work for all languages
-* clean and customizable
 
 
 How to use
 ----------
 
-**todo**
+* adjust mail_template.txt 
+* prepare CSV list (see example)
+* customize script so that it replaces placeholders in the template with data from the CSV file or other sources
+* send e-mails
+  * do a dry-run first (DRY_RUN=1), no email will actually be sent
+  * test in safe mode (DRY_RUN=0 and SAFE_MODE=1) - all emails will be sent to one specified address (ideally your own address).
+  * if everything seems ok, disable SAFE_MODE and run the script again. 
+
+Ideally, you should do all your local modifications in separate git branches. Then you can pull updates to this script without clashes with your existing modifications.
+
+Links
+-----
+
+* Similar project on github: https://github.com/qoda/python-mailer
+* First version of code: http://my.opera.com/raphman/blog/2008/05/13/python-script-for-sending-out-bulk-password-e-mails
+
