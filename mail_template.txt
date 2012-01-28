@@ -1,0 +1,23 @@
+From: $SENDER$
+To: $RECIPIENT$
+Organization: 
+Subject: Your ID
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+Hi $NAME$,
+ 
+This is your personal ID:
+
+#########
+#       #
+# $ID$  #
+#       #
+#########
+
+Best,
+
+Me
+
+[This email has been generated automatically]
